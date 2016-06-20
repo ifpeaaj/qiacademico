@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+		
+<html>
+	<iframe name="FRAMENAME" src="../menu.php" width="100%" style="z-index:10000" height="100%" frameborder="0" scrolling="no" allowautotransparency=true></iframe>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="../academico.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="../validar.js"></script>
+		<script type="text/javascript" src="../MascaraValidacao.js"></script> 
+		<title> Cadastrar </title>
+	</head>
+
+	<body>
+
+		<center><img class="imagem" src="../ACADD.jpg" alt="logo"></center>
+		<h1 class="fonte" > Sistema de Gestão Acadêmica - ACAD </h1>
+		<br>
+			
+		<fieldset class="fonteform" >
+			<legend>Cadastrar Pesquisa</legend>
+			
+			<div>	
+				<label>Professor(a)&nbsp;*:</label> 
+				<select id="professor">
+					<option value=""></option>
+					<option value="Pedro">Pedro Sermão</option>
+					<option value="Catarina">Catarina campos</option>
+					<option value="Thiago">Thiago Martins</option>
+					<option value="Savil">Savil Silva</option>
+					<option value="Max">Max Cardoso </option>
+					<option value="jean">Jean Santos</option>			
+				</select>				
+			</div>
+			<br>
+			<div>
+				<label>Titulo do Projeto&nbsp;*:</label>
+				<input type="text" id="tituloprojeto" id="tituloprojeto" maxlength=50>
+			</div>
+			<br>
+			<div>
+				<label>Descrição:</label>
+				<textarea id="text" cols=20 rows=5></textarea>
+			</div>
+			<br>
+			<br>
+			<div>	
+				<button type="submit" class="botao submit" onclick="validaProjetoP();" >Salvar</button>
+			<div>
+			<br>
+			<br>
+		</fieldset>	
+			
+			<p style="text-align:right;">
+				<a href="menu_professor.html"> Professor </a><br>
+				<a href="../index.html" align="left"> Menu Principal <a>		
+			</p>
+	</body>
+</html>

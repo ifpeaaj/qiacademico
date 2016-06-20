@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+		
+<html>
+	<iframe name="FRAMENAME" src="../menu.php" width="100%" style="z-index:10000" height="100%" frameborder="0" scrolling="no" allowautotransparency=true></iframe>
+
+	<head> 
+		<meta charset= “utf-8”>
+		<link rel="stylesheet" type="text/css" href="../academico.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="../validar.js"></script>
+		<script type="text/javascript" src="../MascaraValidacao.js"></script>
+		<title> Cadastrar Professor </title>
+	</head>
+
+	<body>
+		<center><img class="imagem" src="../ACADD.jpg" alt="logo"></center>	
+		<h1 class="fonte"> Sistema de Gestão Acadêmica - ACAD </h1>
+
+		<br>		 
+		<br>
+		
+		<form name="form1">	
+			<div > 
+				<fieldset class="fonteform">
+					<legend>Dados Pessoais</legend>		
+					<label>Nome&nbsp;*:</label> <input type="text" name="nome" id="nome">
+					<label>Data de Nascimento&nbsp;*:</label> <input type="date" name="data" id="data"><br>
+					<label>CPF&nbsp;*:</label>  <input type="text" name="cpf" id="cpf" maxlength=14 onBlur="ValidarCPF(form1.cpf);" 
+onKeyPress="MascaraCPF(form1.cpf);">
+					<label>Matricula&nbsp;*:</label> <input type="text" name="matricula" id="matricula"><br>
+					<label>Sexo&nbsp;*:</label>
+					<select id="sexo">
+						<option value=””></option>
+						<option value=”F”>Feminino</option>
+						<option value=”M”>Masculino</option>
+					</select>
+					<br>
+					<br>
+				
+					 <div>
+						<button type="submit" class="botao submit" onclick="validaCadastroP();">Salvar</button>
+					</div>
+				</fieldset>	
+			</div>	
+		</form>
+			
+			<p style="text-align:right;">
+				<a href="menu_secretaria.html"> Secretaria </a><br>
+				<a href="../index.html" align="left"> Menu Principal </a>		
+			</p>
+	</body>
+</html>

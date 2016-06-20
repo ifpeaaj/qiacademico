@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+		
+<html>
+	<iframe name="FRAMENAME" src="../menu.php" width="100%" style="z-index:10000" height="100%" frameborder="0" scrolling="no" allowautotransparency=true></iframe>
+	<head> 
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+		<title> Realizar Matricula </title>
+		<link rel="stylesheet" type="text/css" href="../academico.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="../validar.js"></script>
+	</head>
+
+	<body>
+		<center><img class="imagem" src="../ACADD.jpg" alt="logo"></center>
+		<h1 class="fonte" > Sistema de Gestão Acadêmica - ACAD </h1>
+			<br>
+			<br>
+		<fieldset class="fonteform">
+			<legend>Realizar Matricula</legend>
+			<div>	
+				<label>Aluno(a)&nbsp;*:</label> 
+
+				<select id="aluno">
+					<option value=""></option>
+					<option value="maria">Maria Luciene</option>
+					<option value="João">João Maré</option>
+					<option value="mirian">Manuella de Britto</option>
+					<option value="joao"> João da Silva</option>
+					<option value="junior">Santos Severo</option>
+					<option value="ana">Ana Ferreira Silva</option>
+					<option value="joao">João Moura</option>
+					<option value="maria">Maria Souza</option>
+					<option value="clarice">Clarice Maria</option>
+					<option value="Ana">Ana Maria</option>
+				</select>
+					
+			</div>
+			<br>
+			<div>
+				<label>Curso&nbsp;*:</label>
+				<select id="curso">
+					<option value=""></option>
+					<option value="Direito">Direito</option>
+					<option value="Administração">Administração</option>
+					<option value="Tec. Informática">Técnico em Informática</option>
+					<option value="Engeharia Civil">Engeharia Civil</option>
+				</select>	
+			</div>
+			<br>
+			<div>
+				<label>Turno&nbsp;*:</label>
+				Tarde <input type="radio" name="turno" id="tarde">
+				Noite <input type="radio" name="turno" id="noite">
+			</div>
+			<br>
+			<div>
+				<label>Semestre&nbsp;*:</label>
+				<input type="text" name="semestre" id="semestre" maxlength=8>
+			</div>
+			<br>
+			<div>
+				<label>Disciplina&nbsp;*:</label>
+				<select id="disciplina" multiple size=3>
+					<option value=""></option>
+					<option value="TW">Técnologias WEB</option>
+					<option value="DT">Desenho Técnico</option>
+					<option value="DV">Direito Civil</option>
+					<option value="MA">Matemática Aplicada</option>
+					<option value="ED">Estruturas de Dados</option>
+					<option value="web1">WEB 1</option>
+					<option value="EC">Econômia Política</option>
+					<option value="PP">Projeto e Pratica</option>
+					<option value="CB">Contabilidade Básica</option>
+					<option value="GA">Geometria Analítica</option>
+					<option value="CP">Ciência Política</option>
+				</select>
+			</div>		
+					<br>
+					<br>
+			<div>	
+				<button type="submit" class="botao submit" onclick="validaRmatriculas();">Salvar</button>
+			</div>	
+		</fieldset>		
+				
+			<p style="text-align:right;">
+				<a href="menu_secretaria.html"> Secretaria </a><br>
+				<a href="../index.html" align="left"> Menu Principal <a>		
+			</p>
+	</body>
+</html

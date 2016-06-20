@@ -1,0 +1,65 @@
+<!DOCTYPE HTML >
+		
+<html lang="pt-br">
+
+	<iframe name="FRAMENAME" src="../menu.php" width="100%" style="z-index:10000" height="100%" frameborder="0" scrolling="no" allowautotransparency=true></iframe>
+	<head> 
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="../academico.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="../validar.js"></script>
+
+		<title> Emitir Matricula </title>
+	</head>
+
+	<body>
+		<center><img  class="imagem" src="../ACADD.jpg" alt="logo"></center>
+		<h1 class="fonte"> Sistema de Gestão Acadêmica - ACAD </h1>
+		<br>
+		
+			<fieldset class="fonteform">
+				<legend>Emitir Matricula</legend>
+			
+				<div>	
+					<label>Aluno(a):</label> 
+					<select id="aluno">
+						<option value=""></option>
+						<option value="maria">Maria Luciene</option>
+						<option value="João">João Maré</option>
+						<option value="mirian">Manuella de Britto</option>
+						<option value="joao"> João da Silva</option>
+						<option value="junior">Santos Severo</option>
+						<option value="ana">Ana Ferreira Silva</option>
+						<option value="joao">João Moura</option>
+						<option value="maria">Maria Souza</option>
+						<option value="clarice">Clarice Maria</option>
+						<option value="Ana">Ana Maria</option>
+					</select>		
+				</div>
+				<br>
+			
+				<div>
+					<label>Semestre:</label>
+					<input type="text" name="semestre" id="semestre" maxlength=8>
+				</div>
+				<br>
+			
+				<div> 
+					<label>Tipo de Emissão:</label>
+					Gerar PDF<input value="pdf" type="radio" name="tipo" id="pdf">
+					Enviar por e-mail<input value="email" type="radio" name="tipo" id="email">
+				</div>
+				<br>
+			
+				<div>
+					<button type="submit" class="botao submit" onclick="validaComprovanteM();">Emitir</button>
+				</div>		
+				
+			</fieldset>	
+	
+			<p style="text-align:right;">
+				<a href="menu_aluno.html"> Aluno </a><br>
+				<a href="../index.html" align="left"> Menu Principal <a>		
+			</p>
+	</body>
+</html>
